@@ -9,9 +9,15 @@
   .indent {
     margin-left: 20px;
   }  
+
+  .input-margin {
+    margin-bottom: 3px; 
+  }
+
 </style>
 </head>
 <body>
+<form action="#" method="GET"> 
   <h1>统一建模语言理论测试</h1>  
   <table>
     <tr>
@@ -39,70 +45,79 @@
         班级：  
       </td>
       <td>
-        <input type="text">  
+        <input type="text" value="1班">  
       </td>      
       <td>
         学号：
       </td> 
       <td>
-        <input type="text"> 
+        <input type="text" value="001"> 
       </td> 
       <td>
         姓名：
       </td>      
       <td>
-        <input type="text"> 
+        <input type="text" value="王小闹"> 
       </td>
     </tr>
   </table>
 
-  <h2>一.填空题（每空5分，共20分）</h2>
+  <h2>一、填空题（每空5分，共20分）</h2>
   <div class="indent">
     <span>1.UML的中文全称是:  </span>
-    <input type="text"><br>
+    <input class="input-margin"type="text" value="统一建模语言" /><br/>
     <span>2.对象最突出的特征是:  </span>
-    <input type="text"> <input type="text"> <input type="text">
+    <input type="text" value="封装性" /> <input type="text" value="继承性" /> <input type="text" value="多态性" />
   </div>  
 
-  <h2>二.选择题（每题10分，共20分）</h2>
+  <h2>二、选择题（每题10分，共20分）</h2>
   <div class="indent">
-    <span>1.UML与软件工程的关系是：</span><br><br>
-    <input type="radio" name="number1">(A)UML就是软件工程<br>
-    <input type="radio" name="number1">(B)UML参与到软件工程中软件开发过程的几个阶段<br>
-    <input type="radio" name="number1">(C)UML与软件工程无关<br>
-    <input type="radio" name="number1">(D)UML是软件工程的一部分<br><br>
+    <span>1.UML与软件工程的关系是：</span><br/><br/>
+    <input type="radio" name="number1" />(A)UML就是软件工程<br/>
+    <input type="radio" name="number1" checked="1" />(B)UML参与到软件工程中软件开发过程的几个阶段<br/>
+    <input type="radio" name="number1" />(C)UML与软件工程无关<br/>
+    <input type="radio" name="number1" />(D)UML是软件工程的一部分<br/><br/>
     <span>2.Java语言支持：</span><br><br>
-    <input type="radio" name="number2">(A)单继承<br>
-    <input type="radio" name="number2">(B)多继承<br>
-    <input type="radio" name="number2">(C)单继承和多继承都支持<br>
-    <input type="radio" name="number2">(D)单继承和多继承都不支持<br>
+    <input type="radio" name="number2" checked="1" />(A)单继承<br/>
+    <input type="radio" name="number2" />(B)多继承<br/>
+    <input type="radio" name="number2" />(C)单继承和多继承都支持<br/>
+    <input type="radio" name="number2" />(D)单继承和多继承都不支持<br/>
   </div>  
 
-  <h2>三.多选题（每题10分，共20分）</h2> 
+  <h2>三、多选题（每题10分，共20分）</h2> 
   <div class="indent">
-    <span>2.Java语言支持：</span><br><br>
-    <input type="checkbox" name="number3">(A)单继承<br>
-    <input type="checkbox" name="number3">(B)多继承<br>
-    <input type="checkbox" name="number3">(C)单继承和多继承都支持<br>
-    <input type="checkbox" name="number3">(D)单继承和多继承都不支持<br>
+    <span>1.用例的粒度分为以下哪三种：</span><br><br>
+    <input type="checkbox" name="number3" checked="1" />(A)概述级<br/>
+    <input type="checkbox" name="number3" checked="1" />(B)需求级<br/>
+    <input type="checkbox" name="number3">(C)用户目标级<br>
+    <input type="checkbox" name="number3" checked="1" />(D)子功能级<br/><br/>
   </div> 
   
-  <h2>四.判断题（每题10分，共20分）</h2>
+  <div class="indent">
+      <span>2.类图由以下那三部分组成：</span><br/><br/>
+      <input type="checkbox" name="number3" checked="1" />(A)名称(Name)<br/>
+      <input type="checkbox" name="number3" checked="1" />(B)属性(Attribute)<br/>
+      <input type="checkbox" name="number3" />(C)操作(Operation)<br/>
+      <input type="checkbox" name="number3" checked="1" />(D)方法(Function)<br/>
+  </div>
+
+  <h2>四、判断题（每题10分，共20分）</h2>
   <div class="indent">
     <span>1.用例图只是用于和客户交流和沟通的，用于确定刚需</span>
-    <input type="radio" name="number4">√
-    <input type="radio" name="number4">×<br>
+    <input type="radio" name="number4" />√
+    <input type="radio" name="number4" checked="1" />×<br/>
     <span>2.在状态图中，终止状态在一个状态图中允许有任意多个</span>
-    <input type="radio" name="number5">√
-    <input type="radio" name="number5">×<br>
+    <input type="radio" name="number5" checked="1" />√
+    <input type="radio" name="number5" />×<br/>
   </div>  
 
-  <h2>五，简答题（每题10分，共20分）</h2>
+  <h2>五、简答题（每题10分，共20分）</h2>
   <div class="indent">
-    <span>1.简述什么是模型以及模型的表现形式？</span><br>
-    <input type="textarea" style="width: 500px; height: 180px;">
+    <span>1.简述什么是模型以及模型的表现形式？</span><br/>
+    <textarea cols="50" rows="10"></textarea>
   </div>
-  <button>计算分数</button><br>
+  <button>计算分数</button><br/>
   <audio class="music" src="./music.mp3"  controls="controls" loop="loop" autoplay="autoplay"> </audio>
+</form> 
 </body>
 </html>
